@@ -28,5 +28,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Thanks to all the contributors and open-source libraries that made this project possible.
 The concept of the Solar System is based on real-world astronomical data and physics.
 
-#Contact
+# Contact
 For any questions or feedback, feel free to open an issue or reach out via email at [kusumasree789@gmail.com].
