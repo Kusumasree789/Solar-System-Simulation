@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.solar-system {
+    position: relative;
+    width: 80vmin;
+    height: 80vmin;
+    max-width: 600px;
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate-solar-system 60s infinite linear;
+}
+
+.sun {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fcd000;
+    box-shadow: 0 0 20px 10px #fcd000;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    animation: orbit 10s infinite linear;
+    background-size: cover;
+}
+
+.planet span {
+    position: absolute;
+    bottom: -20px;
+    text-align: center;
+    width: 100%;
+}
+
+.mercury {
+    width: 16px;
+    height: 16px;
+    background-image: url('images/mercury.jpg');
+    animation-duration: 1.5s;
+}
+
+.venus {
+    width: 30px;
+    height: 30px;
+    background-image: url('images/venus.jpg');
+    animation-duration: 3s;
+}
+
+.earth {
+    width: 35px;
+    height: 35px;
+    background-image: url('images/earth.jpg');
+    animation-duration: 4s;
+}
+
+.mars {
+    width: 25px;
+    height: 25px;
+    background-image: url('images/mars.jpg');
+    animation-duration: 5s;
+}
+
+.jupiter {
+    width: 60px;
+    height: 60px;
+    background-image: url('images/jupiter.jpg');
+    animation-duration: 8s;
+}
+
+.saturn {
+    width: 70px; /* Increased size */
+    height: 70px; /* Increased size */
+    background-image: url('images/saturn.jpg');
+    animation-duration: 9s;
+    background-size: cover;
+    background-position: center; /* Center the image */
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+}
+
+.uranus {
+    width: 45px;
+    height: 45px;
+    background-image: url('images/uranus.jpg');
+    animation-duration: 6s;
+}
+
+.neptune {
+    width: 40px;
+    height: 40px;
+    background-image: url('images/neptune.jpg');
+    animation-duration: 7s;
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(150px);
+    }
+    100% {
+        transform: rotate(360deg) translateX(150px);
+    }
+}
+
+@keyframes rotate-solar-system {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .solar-system {
+        width: 90vmin;
+        height: 90vmin;
+    }
+}
