@@ -21,9 +21,6 @@ Once the simulation is running in your browser, interact with the solar system b
 # Contributing
 Contributions to improve the Solar System Simulation are welcome! If you'd like to contribute, please fork the repository and submit a pull request with your proposed changes.
 
-# License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 # Acknowledgments
 Thanks to all the contributors and open-source libraries that made this project possible.
 The concept of the Solar System is based on real-world astronomical data and physics.
